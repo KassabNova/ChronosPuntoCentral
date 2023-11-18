@@ -54,6 +54,6 @@ public class BarcodeController {
     }
 
     public void saveQR(BitMatrix matrix, String barcode) throws IOException {
-        MatrixToImageWriter.writeToPath(matrix, "png", Paths.get(Paths.get("").toAbsolutePath().getParent().toString() + "/reservationQR/" + barcode));
+        MatrixToImageWriter.writeToPath(matrix, "png", Paths.get(Paths.get("").toAbsolutePath().getParent().toString() + "/service/reservationQR/" + barcode));
     }
 }
